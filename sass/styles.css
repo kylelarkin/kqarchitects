@@ -1,0 +1,38 @@
+/* Variables */
+/* Styles */
+.standard-grid {
+  display: grid;
+  gap: 0 1.5rem;
+  grid-template-columns: [full-start] calc(50vw - 720px) [main-start] minmax(0, 1fr) [main-end] calc(50vw - 720px) [full-end];
+}
+
+.standard-grid > * {
+  grid-column: main;
+}
+
+body {
+  background-image: url("../img/background-image.jpg");
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: calc(16px + 2 * (100vw - 300px) / 1300);
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin-bottom: 10rem;
+}
+
+h2 {
+  font-family: "bio-sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: white;
+  font-size: calc(46px + 10 * (100vw - 300px) / 1300);
+}
+
+.standard-grid hr {
+  border-top: 1px solid white;
+}

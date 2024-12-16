@@ -1,0 +1,1 @@
+AOS.init(),jarallax(document.querySelectorAll(".jarallax"),{speed:.2});var tabs=new Tabby("[data-tabs]");

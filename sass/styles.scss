@@ -1,0 +1,85 @@
+/* Variables */
+// Weight 600
+$heading-font: "proxima-nova", sans-serif;
+// Weight 400, 600, 700
+$body-font: "proxima-nova", sans-serif;
+
+/* Styles */
+.standard-grid {
+  display: grid;
+  gap: 0 1.5rem;
+  grid-template-columns: [full-start] calc(50vw - 720px) [main-start] minmax(0, 1fr) [main-end] calc(50vw - 720px) [full-end];
+}
+.standard-grid > * {
+  grid-column: main;
+}
+
+body {
+  background-image: url("../img/background-image.jpg");
+  background-size: cover;
+  font-family: $body-font;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  color: white;
+  font-weight: 300;
+  font-family: $heading-font;
+  .bold {
+    font-weight: 700;
+  }
+}
+
+h2 {
+  font-family: $heading-font;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: .5rem;
+  letter-spacing: 1px; 
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+} 
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: white;
+}
+
+hr {
+ border-top: 1px solid white;
+ margin: 3rem 0rem;
+}
+
+.people-info {
+  margin-bottom: 3rem;
+}
+
+.links {
+  margin-bottom: .5rem;
+}
+
+//media query
+@media screen and (min-width: 740px) {
+  h1 {
+    font-size: 40px;
+    max-width: 900px;
+  }
+.container .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+}
+
+
